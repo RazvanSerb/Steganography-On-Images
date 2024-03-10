@@ -1,0 +1,10 @@
+<!-- TODO: Don't forget to extend the base template ;)  -->
+
+{% extends "_base.html" %}
+{% block title %}DECODE{% endblock %}
+{% block content %}
+  <form action="/decode_result.html" method="post" enctype="multipart/form-data">
+    <input type="file" name="image" accept="image/*"> </br>
+    <button type="submit" class="btn btn-primary">DECODE</button>
+  </form>
+{% endblock %}

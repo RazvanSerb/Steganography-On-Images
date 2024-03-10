@@ -1,0 +1,11 @@
+<!-- TODO: Don't forget to extend the base template ;)  -->
+
+{% extends "_base.html" %}
+{% block title %}ENCODE{% endblock %}
+{% block content %}
+  <form action="/encode_result.html" method="post" enctype="multipart/form-data">
+    <input type="file" name="image" accept="image/*"> </br>
+    <textarea name="message" placeholder="Enter your secret message"></textarea> </br>
+    <button type="submit" class="btn btn-primary">ENCODE</button>
+  </form>
+{% endblock %}
